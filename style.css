@@ -162,11 +162,7 @@ article p::first-line{
 
 
 /* Sign Up forms */
-/* error message for empty fields  */
-.bug{
-    color: #f63232;
-    display:none;
-}
+
 
 
 .add_up{
@@ -213,6 +209,14 @@ form input{
     cursor: pointer;
 
 }
+
+
+/* error message for empty fields  */
+.bug{
+    color: #f63232;
+    display:none;
+}
+
  /* Footer  */
 
 footer{
@@ -227,64 +231,6 @@ footer{
 
 
 /* reponsive for all media screen sizes */
-@media screen and (max-width: 850px) {
-    .navbar ul{
-       gap: 5opx;
-    }
-
-    .navbar a {
-    text-decoration: none;
-    color: #4b4b4b;
-    font-size: 20px;
-    }
-}
-    
-@media screen and (min-width:360px) and (max-width:600px) {
-    .welcome h2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .welcome{
-        position: static;
-    }
-
-    .container h2{
-        font-size: 20px;
-    }
-
-    .navbar ul{
-        flex-direction: column;
-        gap: 2px;
-        align-items: flex-start;
-    }
-    .navbar{
-        position: static;
-    }
-
-    .pictures{
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .pictures li{
-        display: inline-block;
-        width: 50%;
-        margin: 0px 5%;
-    }
-
-    .submit-button{
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    }
-    
-
 
 @media screen and (max-width: 500px) {
     * {
@@ -308,10 +254,21 @@ footer{
         position: static;
     }
 
+    .navbar ul{
+        flex-direction: column;
+        gap: 2px;
+        align-items: flex-start;
+    }
     nav li {
         display: block;
         font-size: large;
     }
+
+    .navbar a {
+        text-decoration: none;
+        color: #4b4b4b;
+        font-size: 20px;
+        }
 
     .container .welcome {
         position: static;
@@ -341,8 +298,13 @@ footer{
     .container h2 span {
         font-size: 1.2em;
     }
+    
+    article .h2{
+        font-size: medium;
+    }
 
     .pictures {
+        flex-direction: column;
         text-align: center;
         margin: 0px;
     }
@@ -364,10 +326,15 @@ footer{
         margin-right: 20px;
     }
 
-    form {
+    .add_up form {
         width: 310px;
         margin: 0 auto;
     }
+
+    .submit-button{
+        position: static;
+    }
+
 }
 
 
