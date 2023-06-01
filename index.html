@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameLoft</title>
+    <script src="./index.js" defer></script>
+    <link  href="./style.css"  rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap"
-      rel="stylesheet"
-    />
-    <script src="index.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body></body>
+       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,500&display=swap"
+       rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1> GameLoft </h1>
+    </header>
+    <section class="container">
+      <img src="./assets/banner.jpeg" alt="Gameloft picture"/>
+      <div class="welcome">
+      <h2>Welcome to
+        <br>
+        <span>GameLoft</span>
+      </h2>  
+      </div>
+    </section>
+ 
+    <!-- Navigation bar -->
+    <nav class="navbar">
+     <ul>
+       <li><a href="#"  class="signup">Sign Up</a></li>
+       <li><a href="#">Latest News</a></li>
+       <li><a href="#NewReleases">New Releases</a></li>
+      <li> <a href="#Contact">Contact</a></li>
+     </ul>
+    </nav>
+
+    <!-- main content of the webpage -->
+  <main>
+   <article>
+     <h2 id="NewReleases"> Latest Releases</h2>
+     <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptatum aspernatur repudiandae possimus in laboriosam, harum ea maxime dolorum accusamus? Odit tempora velit repellat, et aliquam facere vero perspiciatis veniam!
+      </p>
+   </article>
+    <!-- image collection -->
+    <ul  class="pictures">
+      <li>
+        <img src="./assets/game1.jpeg" alt="red dead redemption (II) podter"/>
+      </li>
+      <li>
+        <img src="./assets/game2.jpeg" alt="Grand Theft Auto (V) poster"/>
+
+      </li>
+      <li>
+        <img src="./assets/game3.jpeg" alt="Midnight club(II) poster"/>
+      </li>
+    </ul>
+  </main>
+
+
+    <section id="Contact" class="add_up">
+      <h2 id="join">Join Today</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      
+      <!-- displaying error message -->
+      <p class="bug">Please fields can't be empty</p>
+
+       <!-- Sign up forms -->
+       <form action="">
+        <input id ="name" type ="text"
+        name="name"  placeholder="Enter your name">
+        <input id ="email" type ="email"
+        name="email"  placeholder="Enter your email">
+        <button class="submit-button" type="submit">submit</button>
+       </form>
+    </section>
+
+   
+
+   <!-- Footer -->
+    <footer>
+      <p class="copyright">Copyright &COPY; 2022 GameLoft</p>
+    </footer>
+    
+</body>
 </html>
